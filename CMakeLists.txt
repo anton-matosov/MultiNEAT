@@ -50,3 +50,5 @@ set(SOURCE_FILES
 
 add_executable(MultiNEAT ${SOURCE_FILES})
 target_link_libraries(MultiNEAT ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} pthread)
+
+add_library(dummy src/Utils.h)

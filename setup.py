@@ -82,6 +82,8 @@ def getExtensions():
 
         sources.insert(0, 'src/PythonBindings.cpp')
 
+        sources = ['src/Dummy.cpp']
+
         if is_windows:
             if is_python_2:
                 raise RuntimeError("Python prior to version 3 is not supported on Windows due to limits of VC++ compiler version")
